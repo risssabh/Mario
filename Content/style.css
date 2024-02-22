@@ -1,4 +1,4 @@
-﻿@font-face {
+@font-face {
    font-family: 'SMB';
    src: local('Super Mario Bros.'),
         url('fonts/Super Mario Bros.ttf') format('truetype');
@@ -6,11 +6,17 @@
 }
 
 body {
-    background-image: url(pics/background.png);
+    background-image: url(backgrounds/mariobg.mp4);
     background: black;
     color: white;
 }
-
+.bgclip{
+	position: absolute;
+	right: 0;
+	bottom: 0;
+	z-index: -1;
+	width: 100%;
+}
 .mario-title{
 	font-family: 'SMB';
     font-size: 30px;
@@ -41,12 +47,6 @@ body {
 .mario_O{
     color: green;
  }
-
-.mario-title3{
-	font-family: 'SMB';
-    font-size: 20px;
-	text-align: center;
-}
 
  #game {
 	height: 480px;
@@ -126,4 +126,11 @@ body {
 	position: absolute; 
 	width: 32px; 
 	height: 32px;
+}
+
+.footer{
+	font-family: 'SMB';
+    font-size: 10px;
+    text-align: center;
+	margin-top: 41%;
 }
